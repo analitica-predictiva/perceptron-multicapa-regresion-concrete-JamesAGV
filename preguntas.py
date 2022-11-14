@@ -28,7 +28,7 @@ def pregunta_01():
     X.drop(labels='strength', axis=1, inplace=True) 
 
     # Retorne `X` y `y`
-    return x, y
+    return X, y
 
 
 def pregunta_02():
