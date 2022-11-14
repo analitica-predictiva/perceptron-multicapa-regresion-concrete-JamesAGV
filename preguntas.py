@@ -31,6 +31,7 @@ def pregunta_01():
     return X, y
 
 
+
 def pregunta_02():
     """
     Preparación del dataset.
