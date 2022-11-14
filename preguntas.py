@@ -38,14 +38,14 @@ def pregunta_02():
     """
 
     # Importe train_test_split
-    from ____ import ____
+    from sklearn.model_selection import train_test_split
 
     # Cargue los datos de ejemplo y asigne los resultados a `X` y `y`.
     x, y = pregunta_01()
 
     # Divida los datos de entrenamiento y prueba. La semilla del generador de números
     # aleatorios es 12453. Use el 75% de los patrones para entrenamiento.
-    (  
+    """(  
         x_train,  
         x_test,  
         y_train,  
@@ -55,7 +55,14 @@ def pregunta_02():
         ____,  
         test_size=____,  
         random_state=____,  
-    )  
+    )  """
+    
+    x_train, x_test, y_train, y_test = train_test_split(
+        x,
+        y,
+        test_size=0.25,
+        random_state=12453
+    )
 
     # Retorne `X_train`, `X_test`, `y_train` y `y_test`
     return x_train, x_test, y_train, y_test
