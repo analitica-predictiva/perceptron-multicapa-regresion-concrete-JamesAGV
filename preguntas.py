@@ -76,11 +76,13 @@ def pregunta_03():
     # Importe MLPRegressor
     # Importe MinMaxScaler
     # Importe Pipeline
-    from ____ import ____
+    from sklearn.neural_network import MLPRegressor
+    from sklearn.preprocessing import MinMaxScaler
+    from sklearn.pipeline import Pipeline
 
     # Cree un pipeline que contenga un estimador MinMaxScaler y un estimador
     # MLPRegressor
-    pipeline = Pipeline(
+    """pipeline = Pipeline(
         steps=[
             (
                 "minmaxscaler",
@@ -91,6 +93,19 @@ def pregunta_03():
                 ____(____),  
             ),
         ],
+    )"""
+    
+    pipeline = Pipeline(
+        steps=[
+            (
+                'minmaxscaler',
+                MinMaxScaler()
+            ),
+            (
+                'mlpregressor',
+                MLPRegressor()
+            )
+        ]
     )
 
     # Retorne el pipeline
